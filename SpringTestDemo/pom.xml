@@ -25,6 +25,10 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+		<sonar.projectKey>johndacost_SpringSecurityExample</sonar.projectKey>
+		<sonar.organization>johndacost</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+		<sonar.login>711e6036b47b0ad05d207c6d1a79935125353744</sonar.login>
 	</properties>
 
 	<dependencies>
