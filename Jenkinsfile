@@ -1,4 +1,4 @@
-pipeline {
+/* pipeline {
     agent any
     environment {
         SPRING_DATASOURCE_URL='jdbc:mysql://157.26.83.80:3306/spring_db_2020?useSSL=false'
@@ -64,6 +64,34 @@ pipeline {
         always {
             echo 'always clean up'
             deleteDir()
+        }
+    }
+}
+ */
+
+/* DEMO sample */
+ pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps{
+                echo "Build"
+            }
+        }
+        stage('Print all environnement'){
+            steps{
+                sh '(printenv)'
+            }
+        }
+        stage('Test') {
+            steps{
+                echo "Build"
+            }
+        }
+        stage('Deploy') {
+            steps{
+                echo "Build"
+            }
         }
     }
 }
